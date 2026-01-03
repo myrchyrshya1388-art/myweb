@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<div class="cart-container">
+
+    <h2 class="cart-title">🛒 سبد خرید</h2>
+
+    <!-- آیتم‌های سبد -->
+    <div id="cart-items" class="cart-items"></div>
+
+    <!-- جمع کل -->
+    <div id="total" class="cart-total"></div>
+
+    <!-- دکمه پاک کردن -->
+    <button onclick="clearCart()" class="clear-cart">
+        🗑 پاک کردن سبد خرید
+    </button>
+
+    <!-- سبد خالی -->
+    <div class="cart-empty" id="cart-empty" style="display:none">
+        <img src="images/empty-cart.png" class="cart-empty-img">
+        <p class="cart-empty-text">سبد خرید شما خالی است.</p>
+
+        <div class="cart-tip">
+            <span>💖 به سبد خریدتان مهر و محبت اضافه کنید</span>
+            <small>کمک به مددجویان و خیریه‌ها به انتخاب شما</small>
+            <a href="dashbord.html" class="cart-tip-link">مشاهده محصولات</a>
+        </div>
+    </div>
+     <a href="tasveh.html">
+     <button type="button" class="continueBtn">ادامه برای ثبت</button>
+     </a>
+        </form>
+    </div>
+
+    <a href="dashbord.html" class="back-link">⬅️ بازگشت به فروشگاه</a>
+
+</div>
+
+<script src="cartorginal.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>محصول</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+
+<div class="product-page">
+    <img id="main-image" src="" class="main-image">
+
+    <div class="thumbs" id="thumbs"></div>
+
+    <h2 id="title"></h2>
+    <p id="price"></p>
+
+    <button id="add-btn">افزودن به سبد خرید</button>
+</div>
+
+<script src="cart.js"></script>
+<script>
+const products = {
+    xbox: {
+        name: "کنسول Xbox Series X",
+        price: 45000000,
+        images: ["images/xbox1.jpg", "images/xbox2.jpg"]
+    },
+    keyboard: {
+        name: "کیبورد گیمینگ 8400N",
+        price: 1200000,
+        images: ["images/keyboard1.jpg"]
+    }
+};
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const product = products[id];
+
+document.getElementById("title").innerText = product.name;
+document.getElementById("price").innerText =
+    product.price.toLocaleString() + " تومان";
+
+document.getElementById("main-image").src = product.images[0];
+
+product.images.forEach(img => {
+    const i = document.createElement("img");
+    i.src = img;
+    i.onclick = () => document.getElementById("main-image").src = img;
+    document.getElementById("thumbs").appendChild(i);
+});
+
+document.getElementById("add-btn").onclick = () => {
+    addToCart(product.name, product.price);
+};
+</script>
+
+</body>
+</html>

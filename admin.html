@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پنل مدیریت سفارش‌ها</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background:#015b5e;
+      font-family: sans-serif;
+    }
+    .admin-box {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 14px;
+    }
+    th {
+      background: #111827;
+      color: #fffdfd;
+    }
+    select {
+      padding: 5px;
+    }
+    .empty {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div class="admin-box">
+  <h2>📦 پنل مدیریت سفارش‌ها</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>کد پیگیری</th>
+        <th>نام مشتری</th>
+        <th>محصولات</th>
+        <th>تاریخ</th>
+        <th>وضعیت</th>
+        <th>عملیات</th>
+      </tr>
+    </thead>
+    <tbody id="ordersTable">
+      <!-- پر می‌شود -->
+    </tbody>
+  </table>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

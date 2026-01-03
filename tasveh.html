@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dokmh.css">
+    <title>اطلاعات برای ثبت محصول</title>
+</head>
+<body>
+    <div class="checkout-box">
+        <h3>🧾 اطلاعات تسویه حساب</h3>
+
+        <form id="paymentForm" class="checkout-form">
+            <input type="text" id="fullname" placeholder="نام و نام خانوادگی" required>
+            <input type="tel" id="mobile" placeholder="شماره موبایل (11 رقم)" required>
+            <input type="text" id="nationalId" placeholder="کد ملی" required>
+
+            <select id="country" required>
+                <option value="">انتخاب کشور</option>
+                <option>ایران</option>
+                <option>ترکیه</option>
+                <option>امارات</option>
+                <option>آلمان</option>
+                <option>کانادا</option>
+                <option>آمریکا</option>
+            </select>
+
+            <select id="province" required>
+                <option value="">انتخاب استان</option>
+                <option>تهران</option>
+                <option>مشهد</option>
+                <option>اصفهان</option>
+                <option>شیراز</option>
+                <option>تبریز</option>
+                <option>کرج</option>
+                <option>لرستان</option>
+                <option>مازندران</option>
+                <option>کرمانشاه</option>
+                <option>کردستان</option>
+            </select>
+
+            <input type="text" id="city" placeholder="نام شهر" required>
+            <input type="text" id="address" placeholder="پلاک / آدرس" required>
+            <input type="text" id="cardNumber" placeholder="شماره کارت (16 رقم)" required>
+
+            <button type="button" id="continueBtn" onclick="alert('CLICK OK')">
+                ثبت سفارش‌
+            </button>
+
+        </form>
+    </div>
+
+    <a href="dashbord.html" class="back-link">⬅️ بازگشت به فروشگاه</a>
+    <script src="cartorginal.js"></script>
+    <script src="continuebutton.js"></script>
+</body>
+</html>

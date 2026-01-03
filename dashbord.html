@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه | گستر سنتر</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+
+    <div id="overlay" onclick="closeMenu()"></div>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+
+ <div class="search-wrapper">
+
+  <div class="search-box">
+    <span class="search-icon"></span>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="جستجو در محصولات..."
+      autocomplete="off"
+    >
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+  <!-- دکمه دایره‌ای رویدادها (کنار سرچ) -->
+  <a href="roidad.html" class="event-btn">
+    🎯
+    <span>بیشتر</span>
+  </a>
+
+</div>
+
+</header>
+
+<!-- ===== Drawer Menu ===== -->
+<aside class="drawer" id="drawer" onclick="event.stopPropagation()">
+
+    <a href="porofil.html" onclick="goToAccount()">👤اطلاعات کاربری</a>
+    <a href="cart.html">🛒 سبد خرید</a>
+    <a href="support.html">💬 پشتیبانی</a>
+
+    <!-- سایر موارد -->
+    <div class="more-section">
+        <button class="more-btn" onclick="toggleMore()">
+            <span>سایر موارد</span>
+            <span class="arrow" id="more-arrow">▸</span>
+        </button>
+
+        <div class="more-list" id="more-list">
+            <a href="track.html">پیگیری سفارش</a>
+            <a href="tagherat.html">تغییرات قیمت</a>
+            <a href="save.html">نشان شده‌ها</a>
+            <a href="#">انتخاب شهر من</a>
+            <a href="#"> در باره گستر سنتر</a>
+        </div>
+    </div>
+
+</aside>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- ===== Overlay ===== -->
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<!-- ===== Main ===== -->
+<main class="main">
+
+    <!-- Categories -->
+    <section class="categories">
+      <a href="event.html">
+        <button>دسته بندی محصولات</button>
+        </a>
+        <button>باند</button>
+        <button>بازی فکری</button>
+        <button>عروسک</button>
+        <button>کنسول بازی</button>
+    </section>
+
+ <div class="slider">
+  <div class="slides">
+    <a href="hard.html">
+    <img src="/images/slider2.jpg" class="slide active">
+    </a>
+    <img src="/images/slider.jpg" class="slide">
+    <img src="/images/ram.jpg" class="slide">
+    <img src="/images/khazan2.jpg" class="slide">
+    <img src="/images/motorbarghe.jpg" class="slide">
+  </div>
+
+  <button class="slider-btn prev">‹</button>
+  <button class="slider-btn next">›</button>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+    <!-- Products -->
+    <div class="product-card">
+
+  <!-- لینک صفحه محصول -->
+  <section class="products">
+
+  <!-- محصول ۱ -->
+  <section class="products">
+
+  <div class="product-card">
+    <img src="/images/xbox.jpg" alt="Xbox Series X">
+    <h4>Xbox Series X</h4>
+    <span class="price">45,000,000 تومان</span>
+    <a href="xbox.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+  <div class="product-card">
+    <img src="/images/kebord.jpg">
+    <h4>کیبورد 8400N</h4>
+    <span class="price">1,200,000 تومان</span>
+    <a href="kebord.html" class="view-product-btn">مشاهده محصول</a>
+  </a>
+  </div>
+  <div class="product-card">
+    <img src="/images/khazan1.jpg" alt="خازن">
+    <h4>خازن و مقاومت</h4>
+    <span class="price">10,000 تومان</span>
+    <a href="khazan.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+  <div class="product-card">
+    <img src="/images/matherbord.jpg">
+    <h4>مادر برد</h4>
+    <span class="price">12,000,000</span>
+    <a href="maderbord.html" class="view-product-btn">مشاهده محصول</a>
+  </a>
+  </div>
+    <div class="product-card">
+    <img src="/images/motorbarghe.jpg" alt="motor">
+    <h4>موتور برقی</h4>
+    <span class="price">45,000,000 تومان</span>
+    <a href="motor.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+  <div class="product-card">
+    <img src="/images/motor.jpg">
+    <h4>موتور</h4>
+    <span class="price">12,000,000</span>
+    <a href="motor2.html" class="view-product-btn">مشاهده محصول</a>
+  </a>
+  </div>
+    <div class="product-card">
+    <img src="/images/ram.jpg" alt="Ram">
+    <h4>رم مادر برد</h4>
+    <span class="price">1,800,000 تومان</span>
+    <a href="ram.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+  <div class="product-card">
+    <img src="/images/cpu1.jpg">
+    <h4>سی پیو</h4>
+    <span class="price">9,000,000 تومان</span>
+    <a href="cpu.html" class="view-product-btn">مشاهده محصول</a>
+  </a>
+  </div>
+    <div class="product-card">
+    <img src="/images/hard1.jpg" alt="">
+    <h4>هارد Hdd</h4>
+    <span class="price">10,000,000 تومان</span>
+    <a href="hard.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+  <div class="product-card">
+    <img src="/images/hard3.jpg">
+    <h4>هارد3</h4>
+    <span class="price">20,000,000 تومان</span>
+    <a href="hard3.html" class="view-product-btn">مشاهده محصول</a>
+  </a>
+  </div>
+  <div class="product-card">
+    <img src="/images/network.jpg">
+    <h4>خدمات شبکه</h4>
+    <span class="price">توافقی</span>
+    <a href="shabkh.html" class="view-product-btn">مشاهده محصول</a>
+  </div>
+  <div class="product-card">
+    <img src="/images/hard2.jpg" alt="">
+    <h4>هارد Hdd</h4>
+    <span class="price">10,000,000 تومان</span>
+    <a href="hard3.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+<div class="product-card">
+    <img src="/images/hard3.jpg" alt="">
+    <h4>هارد Hdd</h4>
+    <span class="price">10,000,000 تومان</span>
+    <a href="hard.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+<div class="product-card">
+    <img src="/images/xbox.jpg" alt="Xbox Series X">
+    <h4>Xbox Series X</h4>
+    <span class="price">45,000,000 تومان</span>
+    <a href="xbox.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+<div class="product-card">
+    <img src="/images/xbox.jpg" alt="Xbox Series X">
+    <h4>Xbox Series X</h4>
+    <span class="price">45,000,000 تومان</span>
+    <a href="xbox.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+<div class="product-card">
+    <img src="/images/xbox.jpg" alt="Xbox Series X">
+    <h4>Xbox Series X</h4>
+    <span class="price">45,000,000 تومان</span>
+    <a href="xbox.html" class="view-product-btn">مشاهده محصول</a>
+</div>
+
+</section>
+  </div>
+
+    </section>
+
+</main>
+<section class="circle-categories">
+
+  <button class="circle-item">قطعات </button>
+  <button class="circle-item">پوشاک</button>
+  <button class="circle-item">غذا</button>
+  <button class="circle-item">کنسول</button>
+  <button class="circle-item">فیریلنسری</button>
+  <button class="circle-item">دیجیتال</button>
+  <button class="circle-item">متفرقه</button>
+
+
+
+<script src="menu.js"></script>
+<script src="cart.js"></script>
+<script src="user.js"></script>
+<script src="order.js"></script>
+<script src="payment.js"></script>
+<script src="products.js"></script>
+<script src="slider.js"></script>
+<script src="search.js"></script>
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- درباره ما -->
+    <div class="footer-col">
+      <h4>درباره فروشگاه</h4>
+      <p>
+        فروشگاه اینترنتی گستر سنتر ارائه‌دهنده محصولات دیجیتال،
+        کنسول بازی، لوازم جانبی و کالاهای منتخب با تضمین کیفیت.
+      </p>
+    </div>
+
+    <!-- لینک‌های مهم -->
+    <div class="footer-col">
+      <h4>لینک‌های مهم</h4>
+      <ul>
+        <li><a href="#">قوانین و مقررات</a></li>
+        <li><a href="#">حریم خصوصی</a></li>
+        <li><a href="#">سوالات متداول</a></li>
+        <li><a href="#">پیگیری سفارش</a></li>
+      </ul>
+    </div>
+
+    <!-- ارتباط با ما -->
+    <div class="footer-col">
+      <h4>ارتباط با ما</h4>
+      <p>📞 --------</p>
+      <p>📧 ---------------</p>
+      <p>🕒 پشتیبانی: 9 تا 21</p>
+    </div>
+
+    <!-- نماد اعتماد -->
+    <div class="footer-col">
+      <h4>اعتماد شما</h4>
+      <img src="images/enamad.png" alt="نماد اعتماد الکترونیکی" class="enamad">
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © تمامی حقوق برای گستر سنتر محفوظ است
+  </div>
+
+</footer>
+</body>
+</html>

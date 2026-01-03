@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayl.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>کستر سنتر</title>
+    <link rel="icon" type="image/png" href="photo_2025-12-31_21-50-20.jpg">
+</head>
+<body>
+    <form action="dashbord.html" style="width: 400px; height: 450px; margin-left: auto; margin-right: auto;">
+        <fieldset>
+            <legend>ورود</legend>
+            <p>نام کاربری</p>
+            <input type="text" placeholder="نام کاربری 8 کاراکتر" required minlength="8">
+            <p>شماره موبایل</p>
+            <input type="number" placeholder="09022522127" required pattern="09[0-9]{9}" maxlength="11">
+            <p>جمیل</p>
+            <input type="email" placeholder="example@gmail.com" required>
+            <p>رمز عبور</p>
+            <input type="password" placeholder="رمز عبور8 کاراکتر" required minlength="8">
+            <br><br>
+            <button type="submit" class="login-btn">ورود</button>
+            <button type="button" class="login-btn" onclick="location.href='dashbord.html'">ادامه...</button>
+            <div class="remember-box">
+    <input type="checkbox" id="remember">
+    <label for="remember">مرا بخاطر بسپار</label>
+</div>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
