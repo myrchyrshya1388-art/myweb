@@ -3010,3 +3010,15 @@ color:#111;
         margin: 0;
     }
 }
+@media (max-width: 768px) {
+  section.products {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+  }
+
+  section.products > .product-card {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
