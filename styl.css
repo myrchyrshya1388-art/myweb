@@ -3065,4 +3065,10 @@ color:#111;
     border-radius: 10px;
   }
 }
+@media (max-width: 768){
+    .product-card{
+        max-width: none !important;
+    }
+}
+
 
