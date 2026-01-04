@@ -3022,3 +3022,47 @@ color:#111;
     margin: 0 !important;
   }
 }
+@media (max-width: 768px) {
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding: 0 12px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+
+  .product-card h4 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+
+  .product-card .price {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .product-card button,
+  .product-card .view-product-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+}
+
