@@ -1,22 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("searchInput");
-  const results = document.getElementById("searchResults");
-  const cards = document.querySelectorAll(".product-card");
+  const searchInput = document.getElementById("searchInput");
+  const products = document.querySelectorAll(".product-card");
 
-  if (!input) return;
+  console.log("searchInput:", searchInput);
+  console.log("products found:", products.length);
 
-  input.addEventListener("input", () => {
-    const value = input.value.toLowerCase().trim();
-    results.innerHTML = "";
+  if (!searchInput || products.length === 0) {
+    console.warn("Search not initialized");
+    return;
+  }
 
-    if (!value) return;
+  searchInput.addEventListener("input", () => {
+    const value = searchInput.value.trim().toLowerCase();
 
-    cards.forEach(card => {
-      const title = card.querySelector("h4")?.innerText.toLowerCase();
-      if (title && title.includes(value)) {
-        const div = document.createElement("div");
-        div.textContent = card.querySelector("h4").innerText;
-        results.appendChild(div);
+    products.forEach(product => {
+      const name =
+        product.dataset.name ||
+        product.textContent.toLowerCase();
+
+      if (name.includes(value)) {
+        product.style.removeProperty("display"); // 👈 مهم
+      } else {
+        product.style.display = "none";
       }
     });
   });
